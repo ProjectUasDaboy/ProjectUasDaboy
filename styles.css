@@ -1,0 +1,364 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffeb99;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(20% - 20px); /* Adjust width to fit 5 cards in one row with a gap */
+    box-sizing: border-box;
+    background-color: #e0f7fa;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.compare-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    background-color: #e0f7fa;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.compare-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.compare-card h2 {
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+
+.compare-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.compare-card ul li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.back-link {
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    
+    .content {
+        justify-content: flex-start;
+    }
+    
+    .sidebar {
+        height: 100vh;
+    }
+    
+    .cards {
+        justify-content: center;
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffeb99;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-container {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: calc(20% - 20px); /* Adjust width to fit 5 cards in one row with a gap */
+    box-sizing: border-box;
+    background-color: #e0f7fa;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card label {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.compare-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    background-color: #e0f7fa;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.compare-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 8px 8px 0 0;
+}
+
+.compare-card h2 {
+    font-size: 1.4em;
+    margin: 10px 0;
+}
+
+.compare-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.compare-card ul li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.back-link {
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+    
+    .content {
+        justify-content: flex-start;
+    }
+    
+    .sidebar {
+        height: 100vh;
+    }
+    
+    .cards {
+        justify-content: center;
+    }
+}
